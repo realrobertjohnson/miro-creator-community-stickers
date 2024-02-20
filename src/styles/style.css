@@ -41,7 +41,7 @@ img {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  overflow: auto;
+  overflow: auto; /* Rob added */
 }
 
 .main {
@@ -85,4 +85,23 @@ img {
   font-size: 18px;
   font-family: sans-serif;
   cursor: grab;
+}
+
+/* ROb added */
+div.scroll {
+  margin: 4px, 4px;
+  padding: 4px;
+  background-color: #95a4eb;
+  width: 300px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#sticker-pack-description {
+  margin: 8px 0px 8px 0;
+}
+
+#sticker-pack-button {
+  background: var(--indigo50);
 }
