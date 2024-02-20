@@ -1,2 +1,2 @@
-# snickers
-Paul's Stickers
+# Miro Creator Community Sticker Packs
+Stickers.
