@@ -91,7 +91,7 @@ img {
 div.scroll {
   margin: 4px, 4px;
   padding: 4px;
-  background-color: #95a4eb;
+  background-color: #ffffff; /* #95a4eb; */
   width: 300px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -103,5 +103,20 @@ div.scroll {
 }
 
 #sticker-pack-button {
-  background: var(--indigo50);
+  background: #000 /* var(--indigo50); */
+}
+
+.add-row-button {
+  display: inline;
+  background: none;
+  border: 1px solid #4262ff;
+  color: #4262ff;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 4px;
+  padding: 2px 4px 2px 4px;
 }
