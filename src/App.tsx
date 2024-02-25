@@ -3,9 +3,14 @@ import ReactDOM from "react-dom";
 
 import type { DropEvent } from "@mirohq/websdk-types";
 
+/*
+Example of event listener for button click: https://github.com/miroapp/app-examples/tree/main/examples/template-builder (in src/app.js)
+*/
+
 const { board } = miro;
 
 function App() {
+
   const imagesStickersA = [
 		"stickers-a/letter-a-1.svg",
 		"stickers-a/letter-a-2.svg",
@@ -37,7 +42,7 @@ function App() {
 
   return (
     <div className="main">
-      {imagesStickersA.map((image, index) => {
+      {imagesStickersB.map((image, index) => {
         return (
           <img
             src={image}
