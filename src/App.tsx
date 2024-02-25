@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="main">
-      {imagesStickersB.map((image, index) => {
+      {imagesStickersA.map((image, index) => {
         return (
           <img
             src={image}
