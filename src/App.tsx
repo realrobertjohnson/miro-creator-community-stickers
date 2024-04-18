@@ -65,8 +65,8 @@ function App() {
 
   return (
     <div className="main">
-      <div>Drag & drop a sticker onto the board:</div>
-      <br />
+      {/*<div>Drag & drop a sticker onto the board:</div>
+      <br />*/}
       <div className="scroll">
         {stickerPacks.map((stickerPack, index) => {
           return (
