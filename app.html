@@ -14,21 +14,6 @@
   </head>
 
   <body>
-    <div>Drag &amp; drop a sticker onto the board:</div><br />
-
-<!-- START rob's mods -->
-    <!-- Rob added div for horizontal scrolling sticker pack selection buttons -->
-    <div class="scroll">
-      <button id="addRow" class="add-row-button">Stickers A</button>
-      <button id="addRow" class="add-row-button" onClick="window.document.getElementById('spTitle').innerHTML='Stickers B'">Stickers B</button>
-      <button id="addRow" class="add-row-button" onClick="window.document.getElementById('spTitle').innerHTML='Stickers C'">Stickers C</button>
-      <button id="addRow" class="add-row-button" onClick="someFunction('stickersD')">Stickers D</button>
-    </div>
-
-    <!-- Rob added sticker pack title div  -->
-    <div id="spTitle">Stickers A</div>
-<!-- END rob's mods -->
-
     <div id="root"></div>
     <script type="module" src="/src/App.tsx"></script>
   </body>

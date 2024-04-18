@@ -71,16 +71,19 @@ img {
   box-sizing: border-box;
 }
 
+.sticker-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  row-gap: 24px;
+}
+
 .draggable-item {
-  margin-left: 32px;
-  margin-bottom: 32px;
+  margin: auto;
   width: 112px;
   height: 112px;
   max-width: 112px;
   max-height: 112px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #ffffff;
   font-size: 18px;
   font-family: sans-serif;
@@ -88,9 +91,8 @@ img {
 }
 
 /* ROb added */
-div.scroll {
-  margin: 4px, 4px;
-  padding: 4px;
+.scroll {
+  padding: 8px 2px 16px 2px;
   background-color: #ffffff; /* #95a4eb; */
   width: 300px;
   overflow-x: auto;
@@ -117,6 +119,6 @@ div.scroll {
   text-align: center;
   font-size: 14px;
   cursor: pointer;
-  margin-right: 4px;
+  margin-right: 8px;
   padding: 2px 4px 2px 4px;
 }
