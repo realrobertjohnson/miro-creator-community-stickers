@@ -19,7 +19,9 @@ function App() {
     {
       title: "Miro",
       images: [
-				"miro/3458764515581137838.svg",
+				"miro/miro-logo.svg",
+        "miro/miro-text.svg",
+        "miro/3458764515581137838.svg",
 				"miro/3458764515581137843.svg",
 				"miro/3458764515591506435.svg",
 				"miro/3458764515627028735.svg",
