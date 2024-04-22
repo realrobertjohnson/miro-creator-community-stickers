@@ -33,9 +33,11 @@ img {
   max-width: 100%;
 }
 
+/*
 .button {
   text-decoration: none;
 }
+*/
 
 #root {
   width: 100%;
@@ -91,7 +93,7 @@ img {
   cursor: grab;
 }
 
-/* ROb added */
+/* Rob added */
 .scroll {
   padding: 8px 2px 16px 2px;
   background-color: #ffffff; /* #95a4eb; */
@@ -105,21 +107,26 @@ img {
   margin: 8px 0px 8px 0;
 }
 
+/*
 #sticker-pack-button {
-  background: #000 /* var(--indigo50); */
+  background: #000 /* var(--indigo50);
 }
+*/
 
 .add-row-button {
+  font-family: Formular, sans-serif;
+  font-weight: 600;
+  height: 40px;
   display: inline;
   background: none;
-  border: 1px solid #4262ff;
-  color: #4262ff;
-  height: 30px;
-  box-sizing: border-box;
+  color: #5f5c80;
   border-radius: 4px;
   text-align: center;
-  font-size: 14px;
   cursor: pointer;
-  margin-right: 8px;
-  padding: 2px 4px 2px 4px;
+  padding: 0px 10px;
+}
+
+.add-row-button:hover {
+  background: #e8ecff;
+  color: #4262ff;  
 }
