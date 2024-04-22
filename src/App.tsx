@@ -23,26 +23,6 @@ function App() {
         "stickers-a/letter-a-2.svg",
         "stickers-a/letter-a-3.svg",
         "stickers-a/letter-a-4.svg",
-        "stickers-a/letter-a-1.svg",
-        "stickers-a/letter-a-2.svg",
-        "stickers-a/letter-a-3.svg",
-        "stickers-a/letter-a-4.svg",
-        "stickers-a/letter-a-1.svg",
-        "stickers-a/letter-a-2.svg",
-        "stickers-a/letter-a-3.svg",
-        "stickers-a/letter-a-4.svg",
-        "stickers-a/letter-a-1.svg",
-        "stickers-a/letter-a-2.svg",
-        "stickers-a/letter-a-3.svg",
-        "stickers-a/letter-a-4.svg",
-        "stickers-a/letter-a-1.svg",
-        "stickers-a/letter-a-2.svg",
-        "stickers-a/letter-a-3.svg",
-        "stickers-a/letter-a-4.svg",
-        "stickers-a/letter-a-1.svg",
-        "stickers-a/letter-a-2.svg",
-        "stickers-a/letter-a-3.svg",
-        "stickers-a/letter-a-4.svg",
       ],
     },
     {
@@ -74,7 +54,10 @@ function App() {
     },
   ];
 
+  
   const [curStickerPackIndex, setCurStickerPackIndex] = React.useState(0);
+    
+  const [activeButtonIndex, setActiveButtonIndex] = React.useState(0);
 
   // Register the drop event handler once.
   useEffect(() => {
@@ -82,6 +65,11 @@ function App() {
   });
 
   const curStickerPack = stickerPacks[curStickerPackIndex];
+
+  const handleButtonClick = (index: number) => {
+    setCurStickerPackIndex(index);
+    setActiveButtonIndex(index);
+  };
 
   return (
     <div className="main">
@@ -92,8 +80,8 @@ function App() {
           return (
             <button
               id="addRow"
-              className="add-row-button"
-              onClick={() => setCurStickerPackIndex(index)}
+              className={`add-row-button ${index === activeButtonIndex ? 'add-row-button-active' : 'add-row-button'}`}
+              onClick={() => handleButtonClick(index)}
               key={index}
             >
               {stickerPack.title}

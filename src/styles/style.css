@@ -124,6 +124,7 @@ img {
   text-align: center;
   cursor: pointer;
   padding: 0px 10px;
+  margin-right: 4px;
 }
 
 .add-row-button:hover {
@@ -131,7 +132,16 @@ img {
   color: #4262ff;  
 }
 
-.add-row-button-acitve {
+.add-row-button-active {
+  font-family: Formular, sans-serif;
+  font-weight: 600;
+  height: 40px;
+  display: inline;
   background: #e8ecff;
-  color: #4262ff;  
+  color: #4262ff; 
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0px 10px;
+  margin-right: 4px;
 }
