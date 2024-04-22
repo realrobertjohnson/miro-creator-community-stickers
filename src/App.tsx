@@ -23,6 +23,14 @@ function App() {
         "stickers-a/letter-a-2.svg",
         "stickers-a/letter-a-3.svg",
         "stickers-a/letter-a-4.svg",
+        "stickers-a/letter-a-1.svg",
+        "stickers-a/letter-a-2.svg",
+        "stickers-a/letter-a-3.svg",
+        "stickers-a/letter-a-4.svg",
+        "stickers-a/letter-a-1.svg",
+        "stickers-a/letter-a-2.svg",
+        "stickers-a/letter-a-3.svg",
+        "stickers-a/letter-a-4.svg",
       ],
     },
     {
@@ -73,8 +81,6 @@ function App() {
 
   return (
     <div className="main">
-      <div>Drag & drop a sticker onto the board:</div>
-      <br />
       <div className="scroll">
         {stickerPacks.map((stickerPack, index) => {
           return (

@@ -101,6 +101,22 @@ img {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cdccd7; 
 }
 
 #sticker-pack-description {
