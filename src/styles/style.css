@@ -93,31 +93,29 @@ img {
 /* Rob added */
 .scroll {
   padding: 4px 2px 4px 2px;
-  background-color: #ffffff;
+  background-color: white;
   width: 300px;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
+}
 
-  /* width */
-  ::-webkit-scrollbar {
-    height: 4px;
-    width: 4px;
-  }
-  
-  ::-webkit-scrollbar:horizontal {
-    height: 4px;
-  } 
+.scroll::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #ffffff; 
-  }
- 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #cdccd7; 
-  }
+.scroll::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.scroll::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: #cdccd7; /* rgba(0, 0, 0, .5);*/
 }
 
 /* width */
