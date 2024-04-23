@@ -20,24 +20,9 @@ body {
   padding: 20px 24px;
 }
 
-.container {
-  max-width: 580px;
-  margin: 0 auto;
-  background-color: var(--indigo50);
-  padding: var(--space-xxxlarge);
-  border-radius: var(--border-radius-xlarge);
- 
-}
-
 img {
   max-width: 100%;
 }
-
-/*
-.button {
-  text-decoration: none;
-}
-*/
 
 #root {
   width: 100%;
@@ -53,6 +38,16 @@ img {
   align-items: center;
   box-sizing: border-box;
 }
+
+/*
+
+.container {
+  max-width: 580px;
+  margin: 0 auto;
+  background-color: var(--indigo50);
+  padding: var(--space-xxxlarge);
+  border-radius: var(--border-radius-xlarge);
+ }
 
 .tabs {
   width: 100%;
@@ -72,6 +67,8 @@ img {
   align-items: center;
   box-sizing: border-box;
 }
+
+*/
 
 .sticker-images {
   display: grid;
@@ -95,13 +92,32 @@ img {
 
 /* Rob added */
 .scroll {
-  padding: 8px 2px 16px 2px;
-  background-color: #ffffff; /* #95a4eb; */
+  padding: 4px 2px 4px 2px;
+  background-color: #ffffff;
   width: 300px;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
 
+  /* width */
+  ::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar:horizontal {
+    height: 4px;
+  } 
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+  }
+ 
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cdccd7; 
+  }
 }
 
 /* width */
@@ -122,12 +138,6 @@ img {
 #sticker-pack-description {
   margin: 8px 0px 8px 0;
 }
-
-/*
-#sticker-pack-button {
-  background: #000 /* var(--indigo50);
-}
-*/
 
 .add-row-button {
   font-family: Formular, sans-serif;
