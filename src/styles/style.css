@@ -91,7 +91,7 @@ img {
 }
 
 /* Rob added */
-.scroll {
+.sticker-buttons {
   padding: 4px 2px 4px 2px;
   background-color: white;
   width: 300px;
@@ -100,19 +100,19 @@ img {
   white-space: nowrap;
 }
 
-.scroll::-webkit-scrollbar {
+.sticker-buttons::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
-.scroll::-webkit-scrollbar:vertical {
+.sticker-buttons::-webkit-scrollbar:vertical {
   width: 11px;
 }
 
-.scroll::-webkit-scrollbar:horizontal {
+.sticker-buttons::-webkit-scrollbar:horizontal {
   height: 11px;
 }
 
-.scroll::-webkit-scrollbar-thumb {
+.sticker-buttons::-webkit-scrollbar-thumb {
   border-radius: 8px;
   border: 2px solid white; /* should match background, can't be transparent */
   background-color: #cdccd7; /* rgba(0, 0, 0, .5);*/

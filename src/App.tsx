@@ -81,7 +81,7 @@ function App() {
 
   return (
     <div className="main">
-      <div className="scroll">
+      <div className="sticker-buttons">
         {stickerPacks.map((stickerPack, index) => {
           return (
             <button
