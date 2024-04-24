@@ -33,10 +33,10 @@ img {
 
 .main {
   /* Option 2 START*/
-  
+  /*
   height:100%;
   overflow:hidden;
-  
+  */
   /* Option 2 END*/
 
   display: flex;
@@ -48,15 +48,15 @@ img {
 
 .sticker-images {
   /* Option 2 START*/
-  
+  /*
   height:100%;
   overflow:auto;
-  
+  */
   /* Option 2 END */
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: pink;
+  background-color: white;
   width: 100%;
   vertical-align: top;
   row-gap: 24px;
@@ -85,8 +85,8 @@ img {
   overflow-y: hidden;
   white-space: nowrap;
   /* Opton 1 START - this seems to be the better option */
-  /*position: fixed;
-  top: 0;*/
+  position: fixed;
+  top: 0;
   /* Opton 1 END */
 }
 
