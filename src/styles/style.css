@@ -32,10 +32,13 @@ img {
 }
 
 .main {
-  /*
+  /* Option 2 START*/
+  
   height:100%;
   overflow:hidden;
-  */
+  
+  /* Option 2 END*/
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -44,13 +47,18 @@ img {
 }
 
 .sticker-images {
-  /*
+  /* Option 2 START*/
+  
   height:100%;
   overflow:auto;
-  */
+  
+  /* Option 2 END */
+
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: pink;
   width: 100%;
+  vertical-align: top;
   row-gap: 24px;
   padding-top: 5px;
   margin-top: 35px;
@@ -76,9 +84,10 @@ img {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  /* Opton 1 */
-  position: fixed;
-  top: 0;
+  /* Opton 1 START - this seems to be the better option */
+  /*position: fixed;
+  top: 0;*/
+  /* Opton 1 END */
 }
 
 .sticker-buttons::-webkit-scrollbar {
