@@ -32,50 +32,24 @@ img {
 }
 
 .main {
+  height:100%;
+  overflow:hidden;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   box-sizing: border-box;
 }
-
-/*
-
-.container {
-  max-width: 580px;
-  margin: 0 auto;
-  background-color: var(--indigo50);
-  padding: var(--space-xxxlarge);
-  border-radius: var(--border-radius-xlarge);
- }
-
-.tabs {
-  width: 100%;
-}
-
-.form-group {
-  width: 100%;
-}
-
-.preview-container {
-  height: 600px;
-  width: 100%;
-  overflow-y: scroll;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-*/
 
 .sticker-images {
+  height:100%;
+  overflow:auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
   row-gap: 24px;
   padding-top: 5px;
+  margin-top: 4px;
 }
 
 .draggable-item {
@@ -105,11 +79,11 @@ img {
 }
 
 .sticker-buttons::-webkit-scrollbar:vertical {
-  width: 11px;
+  width: 8px;
 }
 
 .sticker-buttons::-webkit-scrollbar:horizontal {
-  height: 11px;
+  height: 8px;
 }
 
 .sticker-buttons::-webkit-scrollbar-thumb {
@@ -130,6 +104,7 @@ img {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
+  border-radius: 8px;
   background: #cdccd7; 
 }
 
