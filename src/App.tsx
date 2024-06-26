@@ -74,9 +74,10 @@ function App() {
 
   const curStickerPack = stickerPacks[curStickerPackIndex];
 
-  const handleButtonClick = (index: number) => {
+  const handleButtonClick = (index: number, element: HTMLButtonElement) => {
     setCurStickerPackIndex(index);
     setActiveButtonIndex(index);
+    element.scrollIntoView({ behavior: "auto", block: "center", inline: "center" });
   };
 
   return (
@@ -87,7 +88,9 @@ function App() {
             <button
               id="addRow"
               className={`add-row-button ${index === activeButtonIndex ? 'add-row-button-active' : 'add-row-button'}`}
-              onClick={() => handleButtonClick(index)}
+              onClick={(e) => {
+                handleButtonClick(index, e.target)
+              }
               key={index}
             >
               {stickerPack.title}
