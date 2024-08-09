@@ -9,4 +9,4 @@ async function init() {
 // Initialize board
 init();
 
-export {};
+export { };

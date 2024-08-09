@@ -27,8 +27,10 @@ img {
 #root {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* was 'hidden' */
-  overflow: auto; /* was 'auto' */
+  overflow-x: hidden;
+  /* was 'hidden' */
+  overflow: auto;
+  /* was 'auto' */
 }
 
 .main {
@@ -62,8 +64,10 @@ img {
   row-gap: 24px;
   padding-top: 5px;
   margin-top: 35px;
-  border-radius: 4px; /* match the button radius */
-  background-color: #ffffff; /* #e8ecff */
+  border-radius: 4px;
+  /* match the button radius */
+  background-color: #ffffff;
+  /* #e8ecff */
 }
 
 .draggable-item {
@@ -83,6 +87,7 @@ img {
   padding: 4px 2px 4px 2px;
   background-color: white;
   width: 300px;
+  border-width: none;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -97,17 +102,19 @@ img {
 }
 
 .sticker-buttons::-webkit-scrollbar:vertical {
-  width: 7.5px;
+  width: 87.5px;
 }
 
 .sticker-buttons::-webkit-scrollbar:horizontal {
-  height: 7.5px;
+  height: 8px;
 }
 
 .sticker-buttons::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  border: 2px solid white; /* should match background, can't be transparent */
-  background-color: #cdccd7; /* rgba(0, 0, 0, .5);*/
+  border: 2px solid white;
+  /* should match background, can't be transparent */
+  background-color: #cdccd7;
+  /* rgba(0, 0, 0, .5);*/
 }
 
 /* width */
@@ -117,23 +124,25 @@ img {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ffffff; 
+  background: #ffffff;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background: #cdccd7; 
+  background: #cdccd7;
 }
 
 .add-row-button {
-  font-family: Formular, sans-serif;
+  /* font-family: Formular, sans-serif; */
   font-weight: 600;
   height: 40px;
   display: inline;
   background: none;
   color: #5f5c80;
   border-radius: 4px;
+  border: none;
+  /* This will remove the border completely */
   text-align: center;
   cursor: pointer;
   padding: 0px 10px;
@@ -142,7 +151,7 @@ img {
 
 .add-row-button:hover {
   background: #e8ecff;
-  color: #4262ff;  
+  color: #4262ff;
 }
 
 .add-row-button-active {
@@ -151,7 +160,7 @@ img {
   height: 40px;
   display: inline;
   background: #e8ecff;
-  color: #4262ff; 
+  color: #4262ff;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;

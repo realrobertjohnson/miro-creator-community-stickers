@@ -62,9 +62,9 @@ function App() {
     },
   ];
 
-  
+
   const [curStickerPackIndex, setCurStickerPackIndex] = React.useState(0);
-    
+
   const [activeButtonIndex, setActiveButtonIndex] = React.useState(0);
 
   // Register the drop event handler once.
@@ -95,7 +95,7 @@ function App() {
               onClick={(e) => {
                 handleButtonClick(index, e)
               }
-            }
+              }
               key={index}
             >
               {stickerPack.title}
